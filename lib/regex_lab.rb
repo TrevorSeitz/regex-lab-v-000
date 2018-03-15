@@ -35,6 +35,7 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  phone_num = phone.gsub(/[^\d]/, '')
-  phone_num.size == 10
+  # phone_num = phone.gsub(/[^\d]/, '')
+  # phone_num.size == 10
+  phone.scan(/\d/).length == 10
 end
