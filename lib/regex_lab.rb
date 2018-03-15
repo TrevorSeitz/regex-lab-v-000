@@ -35,7 +35,8 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  if phone.match(/[0-9]/) && phone.length = 10
+  if phone.match(/[0-9]/)
+    phone.to_i.length == 10
     binding.pry
     true
 
