@@ -44,6 +44,7 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
   # end
 
   text.match(/\A[A-Z]/) != nil && text.match(/\$[:punct:]/) != nil
+  binding.pry
 end
 
 def valid_phone_number?(phone)
