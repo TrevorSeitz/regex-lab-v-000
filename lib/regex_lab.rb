@@ -37,7 +37,12 @@ end
 def valid_phone_number?(phone)
   phone_num = phone.gsub(/[^\d]]/, '')
   binding.pry
-  phone_num.size == 10
+  if phone_num.size == 10
+    true
+  else
+    false
+  end
+    
 
   # puts phone.size
 end
