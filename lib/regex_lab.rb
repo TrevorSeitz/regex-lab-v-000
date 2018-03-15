@@ -31,22 +31,10 @@ def words_five_letters_long(text)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-  # if text.match(/\A[A-Z]/) != nil && text.match(/\$[:punct:]/)
-    # binding.pry
-    # if text.match(/\$[:punct:]/)
-    # binding.pry
-      # true
-    # else
-    #   false
-    # end
-  # else
-  #   false
-  # end
-
   text.match(/^[A-Z].*\W$/) != nil
-  # binding.pry
 end
 
 def valid_phone_number?(phone)
-
+  phone_array = phone.map!{ |number| number.gsub('()', '')}
+  binding.pry
 end
