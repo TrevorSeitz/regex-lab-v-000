@@ -8,7 +8,7 @@ end
 
 def words_starting_with_un_and_ending_with_ing(text)
   words = []
-  if yexy.match(/^un/) || text.match(/$ing/)
+  if text.match(/^un/) || text.match(/$ing/)
     words << text
   end
   words
