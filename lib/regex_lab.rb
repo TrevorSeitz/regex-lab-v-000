@@ -36,8 +36,9 @@ end
 
 def valid_phone_number?(phone)
   phone.map{ |number|
-    if number.include?("(") || number.include?("-")
+      if number.include?("(") || number.include?("-")
     number.gsub('(', '')
+    end
   }
   binding.pry
 end
