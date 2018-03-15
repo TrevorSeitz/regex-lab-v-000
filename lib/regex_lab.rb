@@ -43,7 +43,7 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
   #   false
   # end
 
-  text.match?(/^[A-Z].*\W$/) 
+  text.match(/^[A-Z].*\W$/) 
   # binding.pry
 end
 
