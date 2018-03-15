@@ -35,8 +35,9 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  phone.map!{ |number| 
+  phone.map!{ |number|
     if number.include?("(") || number.include?("-")
-    number.gsub('(', '')}
+    number.gsub('(', '')
+  }
   binding.pry
 end
