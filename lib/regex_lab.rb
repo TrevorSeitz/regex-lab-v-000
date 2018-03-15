@@ -36,7 +36,8 @@ end
 
 def valid_phone_number?(phone)
   if phone.match(/[0-9]/)
-    phone.to_i.length == 10
+    phone_num = phone.to_i.
+    phone_num.length == 10
     binding.pry
     true
 
