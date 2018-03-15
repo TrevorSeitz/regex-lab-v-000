@@ -35,5 +35,6 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  puts phone.size
+  binding.pry
+  # puts phone.size
 end
