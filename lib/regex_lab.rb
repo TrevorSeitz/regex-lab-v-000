@@ -35,8 +35,8 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  phone.size == 10 && phone.include?(/[0-9]/)
-  binding.pry
+  phone_num = phone.gsub(/[^\d]]/, '')
+  phone.size == 10 
 
   # puts phone.size
 end
