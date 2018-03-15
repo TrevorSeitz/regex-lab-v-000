@@ -36,9 +36,9 @@ end
 
 def valid_phone_number?(phone)
     phone.each do |number|
-        if number.include?("(") || number.include?("-")
-      number.gsub('(', '')
+      if number.include?("(") || number.include?("-")
+        number.gsub('(', '')
       end
-    }
+    end
   binding.pry
 end
