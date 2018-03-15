@@ -23,7 +23,7 @@ def words_five_letters_long(text)
   textarray = text.split(" ")
   textarray.each do |word|
     word.split("")
-    if word.length = 5
+    if word.length == 5
       words << word
     end
   end
