@@ -32,7 +32,7 @@ end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
   if text.match(/\A[A-Z]/) != nil
-    # binding.pry
+    binding.pry
     if text.match(/\z[.?!]/) != nil
     # binding.pry
       true
