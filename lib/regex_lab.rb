@@ -8,7 +8,8 @@ end
 
 def words_starting_with_un_and_ending_with_ing(text)
   words = []
-  if text.match(/^un/) || text.match(/$ing/)
+  text.each do |word|
+  if word.match(/^un/) || word.match(/$ing/)
     words << text
   end
   words
