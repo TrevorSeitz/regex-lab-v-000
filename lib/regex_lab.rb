@@ -42,7 +42,5 @@ def valid_phone_number?(phone)
   else
     false
   end
-    
 
-  # puts phone.size
 end
