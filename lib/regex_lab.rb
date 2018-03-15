@@ -36,7 +36,7 @@ end
 
 def valid_phone_number?(phone)
   phone_num = phone.gsub(/[^\d]]/, '')
-  phone.size == 10 
+  phone_num.size == 10 
 
   # puts phone.size
 end
