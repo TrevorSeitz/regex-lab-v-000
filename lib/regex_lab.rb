@@ -31,18 +31,18 @@ def words_five_letters_long(text)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-  # if text.match(/\A[A-Z]/) != nil
-  #   binding.pry
-  #   if text.match(/\z[.?!]/) != nil
-  #   # binding.pry
-  #     true
-  #   else
-  #     false
-  #   end
-  # else
-  #   false
-  # end
-  text.match(/\A[A-Z]/) != nil && text.match(/\z[.?!]/)
+  if text.match(/\A[A-Z]/) != nil
+    # binding.pry
+    if text.match(/\z[.?!]/) != nil
+    # binding.pry
+      true
+    else
+      false
+    end
+  else
+    false
+  end
+  # text.match(/\A[A-Z]/) != nil && text.match(/\z[.?!]/)
 end
 
 def valid_phone_number?(phone)
