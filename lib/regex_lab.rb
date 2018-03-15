@@ -35,10 +35,11 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-    phone.each do |number|
-      if number.include?("(") || number.include?("-")
-        number.gsub('(', '')
-      end
-    end
-  binding.pry
+  if phone.match(/[0-9]/) && phone.length = 10
+    binding.pry
+    true
+
+  else
+
+  end
 end
