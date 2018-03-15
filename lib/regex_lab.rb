@@ -40,7 +40,7 @@ def valid_phone_number?(phone)
   if phone_num.size == 10
     true
   else
-    binding.pry
+    # binding.pry
     false
   end
 end
