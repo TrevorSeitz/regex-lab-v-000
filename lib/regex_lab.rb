@@ -37,5 +37,6 @@ end
 def valid_phone_number?(phone)
   phone.each do |number|
     number.length
+  end
 
 end
